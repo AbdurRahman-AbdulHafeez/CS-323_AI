@@ -1,2 +1,2 @@
-# CS-323_AI
+# CS-323_AI (LABS & PROJECT)
 Artificial Intelligence (Fall 2026)
