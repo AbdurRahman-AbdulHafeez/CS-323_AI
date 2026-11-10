@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<SEARCH>
+	<GRAPH>
+		<DESCRIPTION>
+			<SHORT>null</SHORT>
+			<DETAILED>null</DETAILED>
+		</DESCRIPTION>
+
+		<!-- Edge Definitions -->
+
+
+		<!-- Heuristic Settings -->
+
+		<HEURISTIC value="MANUAL"></HEURISTIC>
+		<EDGECOSTS value="MANUAL"></EDGECOSTS>
+
+	</GRAPH>
+</SEARCH>

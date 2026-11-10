@@ -1,0 +1,85 @@
+<CSPIF VERSION="0.01">
+<CSP>
+<NAME>Crossword Problem 1</NAME>
+<DESCRIPTION>
+	<SHORT>Family Commute CSP</SHORT>
+	<DETAILED>A family of four needs to figure out how each family member will get to work or school based on several constraints.</DETAILED>
+</DESCRIPTION>
+<VARIABLE TYPE="String">
+	<NAME>Mom</NAME>
+	<VALUE>car</VALUE>
+	<VALUE>bike</VALUE>
+	<PROPERTY>position = (7498.073, 5135.0576)</PROPERTY>
+</VARIABLE>
+<VARIABLE TYPE="String">
+	<NAME>Dad</NAME>
+	<VALUE>car</VALUE>
+	<VALUE>bike</VALUE>
+	<PROPERTY>position = (8038.991, 5178.6406)</PROPERTY>
+</VARIABLE>
+<VARIABLE TYPE="String">
+	<NAME>Daughter</NAME>
+	<VALUE>car</VALUE>
+	<VALUE>bike</VALUE>
+	<PROPERTY>position = (7956.956, 5540.1055)</PROPERTY>
+</VARIABLE>
+<VARIABLE TYPE="String">
+	<NAME>Son</NAME>
+	<VALUE>car</VALUE>
+	<VALUE>bike</VALUE>
+	<VALUE>pogo-stick</VALUE>
+	<PROPERTY>position = (7500.0376, 5479.399)</PROPERTY>
+</VARIABLE>
+<CONSTRAINT TYPE="Custom">
+	<CUSTOMNAME>GoTogether</CUSTOMNAME>
+	<GIVEN>Son</GIVEN>
+	<GIVEN>Daughter</GIVEN>
+	<TABLE>
+		T F F T F F 
+	</TABLE>
+	<PROPERTY>position = (7704.442, 5518.316)</PROPERTY>
+</CONSTRAINT>
+<CONSTRAINT TYPE="Custom">
+	<CUSTOMNAME>RideAlong</CUSTOMNAME>
+	<GIVEN>Son</GIVEN>
+	<GIVEN>Daughter</GIVEN>
+	<GIVEN>Dad</GIVEN>
+	<GIVEN>Mom</GIVEN>
+	<TABLE>
+		T T T F T T T F T T T F T T T T T T T F T T T T 
+	</TABLE>
+	<PROPERTY>position = (7708.2866, 5355.5283)</PROPERTY>
+</CONSTRAINT>
+<CONSTRAINT TYPE="Custom">
+	<CUSTOMNAME>CarFits3</CUSTOMNAME>
+	<GIVEN>Son</GIVEN>
+	<GIVEN>Daughter</GIVEN>
+	<GIVEN>Dad</GIVEN>
+	<GIVEN>Mom</GIVEN>
+	<TABLE>
+		F T T T T T T T T T T T T T T T T T T T T T T T 
+	</TABLE>
+	<PROPERTY>position = (7715.9766, 5047.895)</PROPERTY>
+</CONSTRAINT>
+<CONSTRAINT TYPE="Custom">
+	<CUSTOMNAME>2Bikes</CUSTOMNAME>
+	<GIVEN>Son</GIVEN>
+	<GIVEN>Daughter</GIVEN>
+	<GIVEN>Dad</GIVEN>
+	<GIVEN>Mom</GIVEN>
+	<TABLE>
+		T T T T T T T F T T T F T F F F T T T T T T T F 
+	</TABLE>
+	<PROPERTY>position = (7707.6616, 5200.666)</PROPERTY>
+</CONSTRAINT>
+<CONSTRAINT TYPE="Custom">
+	<CUSTOMNAME>DaughterNotInCar</CUSTOMNAME>
+	<GIVEN>Daughter</GIVEN>
+	<TABLE>
+		F T 
+	</TABLE>
+	<PROPERTY>position = (8087.962, 5341.992)</PROPERTY>
+</CONSTRAINT>
+</CSP>
+</CSPIF>
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+
+<SEARCH>
+	<GRAPH>
+		<DESCRIPTION>
+			<SHORT>null</SHORT>
+			<DETAILED>null</DETAILED>
+		</DESCRIPTION>
+
+		<!-- Node Definitions -->
+
+		<NODE>
+			<NAME>a</NAME>
+			<INDEX>0</INDEX>
+			<XPOS>8159.256</XPOS>
+			<YPOS>5041.28</YPOS>
+			<TYPE>START</TYPE>
+			<HEURISTICVALUE>3.0</HEURISTICVALUE>
+		</NODE>
+
+		<!-- Node Definitions -->
+
+		<NODE>
+			<NAME>b</NAME>
+			<INDEX>1</INDEX>
+			<XPOS>7968.793</XPOS>
+			<YPOS>5246.3955</YPOS>
+			<TYPE>REGULAR</TYPE>
+			<HEURISTICVALUE>3.0</HEURISTICVALUE>
+		</NODE>
+
+		<!-- Node Definitions -->
+
+		<NODE>
+			<NAME>d</NAME>
+			<INDEX>2</INDEX>
+			<XPOS>7976.116</XPOS>
+			<YPOS>5568.7197</YPOS>
+			<TYPE>REGULAR</TYPE>
+			<HEURISTICVALUE>3.0</HEURISTICVALUE>
+		</NODE>
+
+		<!-- Node Definitions -->
+
+		<NODE>
+			<NAME>c</NAME>
+			<INDEX>3</INDEX>
+			<XPOS>8422.977</XPOS>
+			<YPOS>5224.419</YPOS>
+			<TYPE>REGULAR</TYPE>
+			<HEURISTICVALUE>1.0</HEURISTICVALUE>
+		</NODE>
+
+		<!-- Node Definitions -->
+
+		<NODE>
+			<NAME>f</NAME>
+			<INDEX>4</INDEX>
+			<XPOS>8623.208</XPOS>
+			<YPOS>5529.6504</YPOS>
+			<TYPE>REGULAR</TYPE>
+			<HEURISTICVALUE>2.0</HEURISTICVALUE>
+		</NODE>
+
+		<!-- Node Definitions -->
+
+		<NODE>
+			<NAME>e</NAME>
+			<INDEX>5</INDEX>
+			<XPOS>8325.303</XPOS>
+			<YPOS>5549.1855</YPOS>
+			<TYPE>GOAL</TYPE>
+			<HEURISTICVALUE>0.0</HEURISTICVALUE>
+		</NODE>
+
+		<!-- Edge Definitions -->
+
+		<EDGE>
+			<STARTINDEX>0</STARTINDEX>
+			<ENDINDEX>1</ENDINDEX>
+			<COST>1.0</COST>
+		</EDGE>
+		<EDGE>
+			<STARTINDEX>1</STARTINDEX>
+			<ENDINDEX>2</ENDINDEX>
+			<COST>1.0</COST>
+		</EDGE>
+		<EDGE>
+			<STARTINDEX>0</STARTINDEX>
+			<ENDINDEX>3</ENDINDEX>
+			<COST>2.0</COST>
+		</EDGE>
+		<EDGE>
+			<STARTINDEX>3</STARTINDEX>
+			<ENDINDEX>5</ENDINDEX>
+			<COST>1.0</COST>
+		</EDGE>
+		<EDGE>
+			<STARTINDEX>3</STARTINDEX>
+			<ENDINDEX>4</ENDINDEX>
+			<COST>1.0</COST>
+		</EDGE>
+
+		<!-- Heuristic Settings -->
+
+		<HEURISTIC value="MANUAL"></HEURISTIC>
+		<EDGECOSTS value="MANUAL"></EDGECOSTS>
+
+	</GRAPH>
+</SEARCH>
