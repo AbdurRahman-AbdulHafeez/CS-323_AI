@@ -1,0 +1,50 @@
+[System]
+Name='CS-323 Lab 13 (Q1)'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=9
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Distance'
+Range=[0 100]
+NumMFs=4
+MF1='far':'trapmf',[65 80 100 100]
+MF2='medium':'trimf',[45 65 80]
+MF3='close':'trimf',[20 35 55]
+MF4='zero':'trapmf',[0 0 20 35]
+
+[Input2]
+Name='Angle'
+Range=[-90 90]
+NumMFs=4
+MF1='zero':'trimf',[-10 0 10]
+MF2='neg_small':'trimf',[-35 -15 0]
+MF3='neg_big':'trapmf',[-90 -90 -45 -20]
+MF4='pos_small':'trimf',[0 15 35]
+
+[Output1]
+Name='Power'
+Range=[-100 100]
+NumMFs=4
+MF1='pos_high':'trimf',[50 100 100]
+MF2='pos_medium':'trimf',[0 50 100]
+MF3='neg_medium':'trimf',[-100 -50 0]
+MF4='zero':'trimf',[-50 0 50]
+
+[Rules]
+1 1, 2 (1) : 1
+1 2, 1 (1) : 1
+2 2, 1 (1) : 1
+2 3, 2 (1) : 1
+3 4, 3 (1) : 1
+3 2, 2 (1) : 1
+3 1, 4 (1) : 1
+4 1, 4 (1) : 1
+4 4, 3 (1) : 1
